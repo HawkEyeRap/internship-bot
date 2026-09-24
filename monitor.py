@@ -53,6 +53,42 @@ def http_json(url, body=None):
         return json.load(r)
 
 
+# ---------- location filter: US, UK, Canada only ----------
+_CODES = ("AL|AK|AZ|AR|CA|CO|CT|FL|GA|HI|IL|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|"
+          "ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY|DC|ON|BC|QC|AB|MB|NS|NB|SK|PE")
+STATE_CODE = re.compile(r"(?:,|\s-)\s*(?:" + _CODES + r")\b")  # "Austin, TX" / "Toronto, ON" (case-sensitive)
+COUNTRY_CODE = re.compile(r"\b(?:US|USA|U\.S\.A?\.?|UK|GB|CAN)\b")
+TARGET_NAMES = re.compile(
+    r"united states|america|canada|united kingdom|england|scotland|wales|northern ireland|great britain|"
+    # US states
+    r"alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|florida|georgia|hawaii|"
+    r"idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|maine|maryland|massachusetts|michigan|"
+    r"minnesota|mississippi|missouri|montana|nebraska|nevada|new hampshire|new jersey|new mexico|"
+    r"new york|north carolina|north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|"
+    r"south carolina|south dakota|tennessee|texas|utah|vermont|virginia|washington|wisconsin|wyoming|"
+    # common city shorthands
+    r"\bnyc\b|\bsf\b|bay area|silicon valley|san francisco|los angeles|seattle|boston|austin|chicago|"
+    r"atlanta|denver|pittsburgh|philadelphia|dallas|houston|miami|san diego|san jose|palo alto|"
+    r"mountain view|menlo park|sunnyvale|redmond|bellevue|cupertino|santa clara|indianapolis|boise|"
+    # Canada
+    r"ontario|british columbia|quebec|québec|alberta|manitoba|nova scotia|newfoundland|saskatchewan|"
+    r"toronto|vancouver|montreal|montréal|waterloo|ottawa|calgary|edmonton|"
+    # UK
+    r"london|edinburgh|manchester|cambridge|oxford|bristol|belfast|glasgow|leeds|birmingham", re.I)
+# Simplify writes US states as 2-letter codes, so there IN/DE/ID mean Indiana/Delaware/Idaho, not India/Germany
+SIMPLIFY_EXTRA = re.compile(r"(?:,\s*(?:IN|DE|ID)\b)|^\s*LA\s*$")
+UNKNOWN_LOC = re.compile(r"^\s*(remote|hybrid|anywhere|multiple locations?|various|\d+\s+locations?)?\s*$", re.I)
+
+
+def location_ok(loc, from_simplify=False):
+    """True if the posting is in the US, UK, or Canada (or the location isn't specified)."""
+    loc = loc or ""
+    if from_simplify and SIMPLIFY_EXTRA.search(loc):
+        return True
+    return bool(UNKNOWN_LOC.match(loc) or STATE_CODE.search(loc) or COUNTRY_CODE.search(loc)
+                or TARGET_NAMES.search(loc))
+
+
 def undergrad_ok(title):
     return not GRAD_ONLY.search(title) or bool(UNDERGRAD.search(title))
 
@@ -235,6 +271,9 @@ def main():
                 results[futs[f]] = f.result()
             except Exception as e:
                 failures.append(f"{futs[f]}: {e}")
+
+    for src in results:  # US / UK / Canada only
+        results[src] = [j for j in results[src] if location_ok(j["location"], src == "simplify")]
 
     new, batch = [], set()
     for src, jobs in results.items():
