@@ -4604,6 +4604,7 @@
 "t:caci|aisystemsengineeringinternsummer2027",
 "t:caci|aisystemsengineerinternsummer2027",
 "t:caci|configurationcontroldatamanagementcoopengineeringdepartment",
+"t:caci|opticalengineeringinternsummer2027",
 "t:caci|softwaredeveloperdatascientistinternsummer2027",
 "t:caci|softwareengineercoopspringsummer2027",
 "t:caci|softwareengineercoopsummerfall2027",
@@ -6838,6 +6839,7 @@
 "t:ziprecruiter|softwareengineerintern",
 "t:zip|softwareengineerintern",
 "t:zip|softwareengineerinternsummer2027",
+"t:zollmedicalcorporation|operationsengineeringcoopspringsummer",
 "t:zoomifier|softwaredevelopmentintern",
 "t:zurnelkaywatersolutions|engineeringinternsummer2027",
 "t:zurnelkaywatersolutions|itinfrastructureaienablementinternsummer2027",
@@ -7123,6 +7125,7 @@
 "wd:buildertrend:/job/Omaha-NE/Data-Engineering-Intern_JR-000472",
 "wd:buildertrend:/job/Omaha-NE/Software-Engineering-Inter_JR-000467",
 "wd:caci:/job/Annapolis-Junction-MD-US/AI-Systems-Engineering-Intern----Summer-2027_332506",
+"wd:caci:/job/Danbury-CT-US/Optical-Engineering-Intern---Summer-2027_332752",
 "wd:caci:/job/Florham-Park-NJ-US/Software-Network-Engineering-Intern---Summer-2027_332895",
 "wd:caci:/job/Lisle-IL-US/Software-Engineering-Intern---Summer-2027_331742",
 "wd:caci:/job/Omaha-NE-US/Software-Engineer-Intern---Summer-2027_332776",
@@ -8396,5 +8399,6 @@
 "wd:zeissgroup:/job/Oberkochen/Intern---AI-enhanced-Business-Strategy--f-m-x-_JR_1052788",
 "wd:zeissgroup:/job/Oberkochen/Intern-AI-Innovation-for-Medical-Devices--f-m-x-_JR_1053345",
 "wd:zekelman:/job/Cambridge-OH/Intern--Automation-Engineer_JR002792",
-"wd:zekelman:/job/Wheatland-PA---Council-Ave/AI-Intern_JR002752"
+"wd:zekelman:/job/Wheatland-PA---Council-Ave/AI-Intern_JR002752",
+"wd:zoll:/job/Pittsburgh-PA/Operations-Engineering-Co-Op---Spring-Summer_R20411"
 ]
