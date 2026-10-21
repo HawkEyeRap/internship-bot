@@ -7016,6 +7016,7 @@
 "t:michelin|summer2027internshipprogressengineeringgreenvillesc",
 "t:microntechnology|equipmentengineerinternshpe",
 "t:microntechnology|internaiagenticsystemsengineer",
+"t:microntechnology|internamhsequipmentengineerid1",
 "t:microntechnology|interncomputesystemcompatibilityengineer",
 "t:microntechnology|interndesignengineerhbm",
 "t:microntechnology|interndesignengineerpathfinding",
@@ -8720,6 +8721,7 @@
 "t:zeiss|internaiinnovationformedicaldevicesfmx",
 "t:zekelmanindustries|aiintern",
 "t:zekelmanindustries|internautomationengineer",
+"t:zillow|softwaredevelopmentengineerintern",
 "t:zimmerbiometholdings|summerinterndatameshplatform",
 "t:zipline|aircraftsoftwareintegrationintern",
 "t:zipline|changemanagementinternsummer2027",
@@ -10259,6 +10261,7 @@
 "wd:micron:/job/Boise-ID---ID1/Intern---Process-Integration-Engineer_JR114192",
 "wd:micron:/job/Boise-ID---ID1/Intern---Process-Integration-Engineer_JR114654",
 "wd:micron:/job/Boise-ID---ID1/Intern---Yield-Enhancement--Engineer_JR114471",
+"wd:micron:/job/Boise-ID---Main-Site/Intern---AMHS-Equipment-Engineer-ID1_JR115126",
 "wd:micron:/job/Boise-ID---Main-Site/Intern---Compute-System-Compatibility-Engineer_JR113627",
 "wd:micron:/job/Boise-ID---Main-Site/Intern---DRAM-Customer-Enablement-Engineering_JR106521",
 "wd:micron:/job/Boise-ID---Main-Site/Intern---Dry-Etch-Equipment-Development-Engineering_JR109987",
@@ -11091,5 +11094,6 @@
 "wd:zeissgroup:/job/Oberkochen/Intern-AI-Innovation-for-Medical-Devices--f-m-x-_JR_1053345",
 "wd:zekelman:/job/Cambridge-OH/Intern--Automation-Engineer_JR002792",
 "wd:zekelman:/job/Wheatland-PA---Council-Ave/AI-Intern_JR002752",
+"wd:zillow:/job/Seattle-WA-2nd-Ave/Software-Development-Engineer---Intern_P751630",
 "wd:zoll:/job/Pittsburgh-PA/Operations-Engineering-Co-Op---Spring-Summer_R20411"
 ]
