@@ -3145,6 +3145,7 @@
 "sr:PAConsulting:744000142851499",
 "sr:PilotCompany:744000148577368",
 "sr:Pyrotek3:744000158834809",
+"sr:Pyrotek3:744000160672779",
 "sr:RESPECInc:744000012676985",
 "sr:RESPECInc:744000107082695",
 "sr:RESPECInc:744000107100902",
@@ -10573,6 +10574,7 @@
 "t:ziprecruiter|softwareengineerintern",
 "t:zip|softwareengineerintern",
 "t:zip|softwareengineerinternsummer2027",
+"t:zoetisservices|aiaccelerationinternaidevelopmentlifecycle",
 "t:zollmedicalcorporation|operationsengineeringcoopspringsummer",
 "t:zoomifier|softwaredevelopmentintern",
 "t:zoox|aiworkflowssafetydecisionmakingintern2027",
@@ -13551,5 +13553,6 @@
 "wd:zekelman:/job/Cambridge-OH/Intern--Automation-Engineer_JR002792",
 "wd:zekelman:/job/Wheatland-PA---Council-Ave/AI-Intern_JR002752",
 "wd:zillow:/job/Seattle-WA-2nd-Ave/Software-Development-Engineer---Intern_P751630",
+"wd:zoetis:/job/US-Remote/AI-Acceleration-Intern---AI-Development-Lifecycle_JR00022013-2",
 "wd:zoll:/job/Pittsburgh-PA/Operations-Engineering-Co-Op---Spring-Summer_R20411"
 ]
