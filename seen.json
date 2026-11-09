@@ -6907,6 +6907,7 @@
 "t:constellationbrands|internaienablement",
 "t:constellationbrands|internaiinnovation",
 "t:constellationbrands|internfullstackengineer",
+"t:constellationbrands|internutilitiesengineering",
 "t:constellationenergy|geothermalproductionanalyticsengineerintern",
 "t:constellationenergy|informationtechnologysoftwaredevelopmentintern",
 "t:constellationenergy|itdataengineeringintern",
@@ -10607,6 +10608,7 @@
 "t:zip|softwareengineerintern",
 "t:zip|softwareengineerinternsummer2027",
 "t:zoetisservices|aiaccelerationinternaidevelopmentlifecycle",
+"t:zoetisservices|aicapabilitiesinternaiarchitectureenablementtools",
 "t:zollmedicalcorporation|operationsengineeringcoopspringsummer",
 "t:zoomifier|softwaredevelopmentintern",
 "t:zoox|aiworkflowsintern2027",
@@ -11222,6 +11224,7 @@
 "wd:cbrands:/job/Rochester-New-York/Intern--AI-Enablement_R-41526",
 "wd:cbrands:/job/Rochester-New-York/Intern--AI-Innovation_R-41656",
 "wd:cbrands:/job/Rochester-New-York/Intern--Full-Stack-Engineer_R-41600",
+"wd:cbrands:/job/San-Antonio-Texas/Intern--Utilities-Engineering_R-41685",
 "wd:cenhud:/job/Poughkeepsie/Engineering-Intern_R2139",
 "wd:centene:/job/Remote-MO/AI-Enablement-Intern--Undergraduate---Summer-2027-_1662038",
 "wd:centific:/job/Remote-Work-USA/AI-Research-Intern----Physical-AI_JR108131-1",
@@ -13604,5 +13607,6 @@
 "wd:zekelman:/job/Wheatland-PA---Council-Ave/AI-Intern_JR002752",
 "wd:zillow:/job/Seattle-WA-2nd-Ave/Software-Development-Engineer---Intern_P751630",
 "wd:zoetis:/job/US-Remote/AI-Acceleration-Intern---AI-Development-Lifecycle_JR00022013-2",
+"wd:zoetis:/job/US-Remote/AI-CAPABILITIES-INTERN---AI-ARCHITECTURE--ENABLEMENT---TOOLS_JR00022016",
 "wd:zoll:/job/Pittsburgh-PA/Operations-Engineering-Co-Op---Spring-Summer_R20411"
 ]
